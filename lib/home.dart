@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:pdf_generator/web_view_container.dart';
 
 class Home extends StatelessWidget {
-  final _links = ['http://localhost:8103/students'];
+  final _links = ['https://camellabs.com'];
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class Home extends StatelessWidget {
           horizontal: 50.0,
           vertical: 15.0,
         ),
-        child: const Text("STUDENT INFO"),
+        child: Text(url),
         onPressed: () => _handleURLButtonPress(context, url),
       ),
     );
